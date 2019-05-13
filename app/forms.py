@@ -1,6 +1,7 @@
 from models import Person, Hobby
 from django import forms
 
+
 class PersonForm(forms.Form):
     class Meta:
         model = Person
