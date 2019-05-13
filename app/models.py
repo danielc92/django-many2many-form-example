@@ -12,6 +12,7 @@ class Hobby(models.Model):
 class Person(models.Model):
     
     name = models.CharField(max_length=100)
+    height = models.IntegerField()
     hobbies = models.ManyToManyField(Hobby)
 
     def __str__(self):
